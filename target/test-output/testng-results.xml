@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<strong> <h3 style="color:DarkViolet"> Test Case1: Login to the Account</h3> </strong>]]>
+    </line>
+    <line>
+      <![CDATA[<br><strong>Step 1. Open URL: 'http://store.demoqa.com/products-page/your-account/'</strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><strong>Step 2. Enter Username: user2</strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><strong>Step 3. Enter Password: pass2</strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><strong>Step 4. Click on 'Login' button.</strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[</br><b style='color:#006699'>&nbsp;&nbsp;&nbsp;Verify that user should show validation message for blank field.</b>]]>
+    </line>
+    <line>
+      <![CDATA[</br><b style='color:#006699'>&nbsp;&nbsp;&nbsp;Test Failed.</b>]]>
+    </line>
+    <line>
+      <![CDATA[<br> <b>Please look to the screenshot - </b>]]>
+    </line>
+    <line>
+      <![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;<br><Strong><font color=#FF0000>--Failed</font></strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;<a href='../test-output/screenshots/0823152246915logintest.png' target='_new'>0823152246915logintest.png</a></br>]]>
+    </line>
+    <line>
+      <![CDATA[<br></br><h3>Failure Reason:</h3>]]>
+    </line>
+    <line>
+      <![CDATA[<br></br>java.lang.AssertionError: expected [true] but found [false]]]>
+    </line>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="153713" started-at="2018-08-23T09:50:29Z" finished-at="2018-08-23T09:53:03Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="153713" started-at="2018-08-23T09:50:29Z" finished-at="2018-08-23T09:53:03Z">
+      <class name="com.login.index.loginIndex">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.login.index.loginIndex@30b8a058]" name="fetchSuiteConfiguration" is-config="true" duration-ms="28" started-at="2018-08-23T15:20:29Z" finished-at="2018-08-23T15:20:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6722db6e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.login.index.loginIndex@30b8a058]" name="setUp" is-config="true" duration-ms="44352" started-at="2018-08-23T15:20:29Z" finished-at="2018-08-23T15:21:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.login.index.loginIndex.logintest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6722db6e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="logintest()[pri:0, instance:com.login.index.loginIndex@30b8a058]" name="logintest" duration-ms="93008" started-at="2018-08-23T15:21:13Z" finished-at="2018-08-23T15:22:46Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.login.index.loginIndex.logintest(loginIndex.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at demo.DEmo1.RunTest.main(RunTest.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<strong> <h3 style="color:DarkViolet"> Test Case1: Login to the Account</h3> </strong>]]>
+            </line>
+            <line>
+              <![CDATA[<br><strong>Step 1. Open URL: 'http://store.demoqa.com/products-page/your-account/'</strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[<br><strong>Step 2. Enter Username: user2</strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[<br><strong>Step 3. Enter Password: pass2</strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[<br><strong>Step 4. Click on 'Login' button.</strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[</br><b style='color:#006699'>&nbsp;&nbsp;&nbsp;Verify that user should show validation message for blank field.</b>]]>
+            </line>
+            <line>
+              <![CDATA[</br><b style='color:#006699'>&nbsp;&nbsp;&nbsp;Test Failed.</b>]]>
+            </line>
+            <line>
+              <![CDATA[<br> <b>Please look to the screenshot - </b>]]>
+            </line>
+            <line>
+              <![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;<br><Strong><font color=#FF0000>--Failed</font></strong></br>]]>
+            </line>
+            <line>
+              <![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;<a href='../test-output/screenshots/0823152246915logintest.png' target='_new'>0823152246915logintest.png</a></br>]]>
+            </line>
+            <line>
+              <![CDATA[<br></br><h3>Failure Reason:</h3>]]>
+            </line>
+            <line>
+              <![CDATA[<br></br>java.lang.AssertionError: expected [true] but found [false]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.login.index.loginIndex@30b8a058]" name="tearDown" is-config="true" duration-ms="16300" started-at="2018-08-23T15:22:46Z" finished-at="2018-08-23T15:23:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logintest status=FAILURE method=loginIndex.logintest()[pri:0, instance:com.login.index.loginIndex@30b8a058] output=<strong> <h3 style="color:DarkViolet"> Test Case1: Login to the Account</h3> </strong>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.login.index.loginIndex -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

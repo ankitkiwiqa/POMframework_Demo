@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RulesValidation" verbose="10" parallel="tests"
+	thread-count="1">
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="4444" />
+
+	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : 
+		chrome 3) IExplorer : ie8 / ie9 -->
+
+	<parameter name="selenium.url"
+		value="http://store.demoqa.com/products-page/your-account/" />
+
+	<!-- <listeners>
+		<listener class-name="com.demo.utility.RetryTestListener" />
+		<listener class-name="com.demo.utility.RetryConterManagerListener" />
+		<listener class-name="com.demo.utility.CustomReporter" />
+	</listeners> -->
+	<parameter name="selenium.browser" value="chrome" />
+
+	<test name="TC_1: Login to the account">
+		<classes>
+			<class name="com.login.index.loginIndex">
+				<methods>
+					<include name="logintest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+
+
+
+</suite>
