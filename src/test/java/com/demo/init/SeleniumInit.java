@@ -331,8 +331,8 @@ public class SeleniumInit {
 			browserName = capability.getVersion();
 			osName = capability.getPlatform().name();
 			browserVersion = capability.getVersion();
-			driver = new ChromeDriver();
-			//driver = new RemoteWebDriver(remote_grid, capability);
+			//driver = new ChromeDriver();
+			driver = new RemoteWebDriver(remote_grid, capability);
 
 		} else if (targetBrowser.contains("safari")) {
 
